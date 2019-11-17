@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
+import { Link } from 'gatsby';
 
 class PostListing extends React.Component {
   getPostList() {
@@ -20,6 +20,7 @@ class PostListing extends React.Component {
 
   render() {
     const postList = this.getPostList();
+    console.log(postList);
     return (
       <div>
         {/* Your post list here. */

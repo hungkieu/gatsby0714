@@ -145,21 +145,21 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  //  Create tag pages
-  tagSet.forEach(tag => {
-    createPage({
-      path: `/tags/${_.kebabCase(tag)}/`,
-      component: tagPage,
-      context: { tag }
-    });
-  });
+  // //  Create tag pages
+  // tagSet.forEach(tag => {
+  //   createPage({
+  //     path: `/tags/${_.kebabCase(tag)}/`,
+  //     component: tagPage,
+  //     context: { tag }
+  //   });
+  // });
 
-  // Create category pages
-  categorySet.forEach(category => {
-    createPage({
-      path: `/categories/${_.kebabCase(category)}/`,
-      component: categoryPage,
-      context: { category }
-    });
-  });
+  // // Create category pages
+  // categorySet.forEach(category => {
+  //   createPage({
+  //     path: `/categories/${_.kebabCase(category)}/`,
+  //     component: categoryPage,
+  //     context: { category }
+  //   });
+  // });
 };
