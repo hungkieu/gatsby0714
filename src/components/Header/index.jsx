@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import './style.css';
 
 const style = {
 	header: {
@@ -31,14 +30,8 @@ const Header = ({ title }) => {
 			<div className="Container">
 				<div className="w960" style={style.header}>
 					<Link to="/" style={style.title}>
-						<h1>{title}</h1>
+						<h3>HungKieu</h3>
 					</Link>
-					{/*					<Link to="/posts" style={style.link}>
-						Bài viết
-					</Link>
-					<Link to="/applications" style={style.link}>
-						Ứng dụng
-					</Link>*/}
 				</div>
 			</div>
 		</header>

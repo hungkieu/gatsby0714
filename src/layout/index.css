@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap&subset=vietnamese');
 
 * {
 	box-sizing: border-box;
@@ -33,9 +34,15 @@ a {
 }
 
 .w960 {
-	padding: 0 8px;
+	padding: 0 24px;
 	width: 100%;
 	max-width: 960px;
+}
+
+.w768 {
+	padding: 0 24px;
+	width: 100%;
+	max-width: 768px;
 }
 
 .pagination {
@@ -50,4 +57,36 @@ a {
 
 .pagination a[aria-current] {
 	background: #eee;
+}
+
+.Post {
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
+}
+
+.Post h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 21px;
+}
+
+.Post h1.title {
+	font-family: 'Noto Serif', serif;
+	font-size: 2rem;
+}
+
+.Post p {
+	overflow-wrap: break-word;
+	text-size-adjust: 100%;
+	letter-spacing: -0.05px;
+	line-height: 32px;
+	overflow-wrap: break-word;
+	text-rendering: optimizelegibility;
+	word-break: break-word;
+	-webkit-font-smoothing: antialiased;
+}
+
+.Post p img {
+	display: block;
+	text-align: center;
+	margin: 16px auto;
 }
