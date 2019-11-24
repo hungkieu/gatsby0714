@@ -16,7 +16,7 @@ const RenderPaging = ({ pageContext }) => {
   if (pageCount <= 1) return <></>;
 
   return (
-    <div className="w960 pagination">
+    <div className="w768 pagination">
       {!isFirstPage && <Link to={prevPage}>Previous</Link>}
       {[...Array(pageCount)].map((_val, index) => {
         const pageNum = index + 1;
@@ -40,7 +40,7 @@ const Listing = ({ data, pageContext }) => {
   return (
     <Layout>
       <div className="Container column">
-        <div className="w960">
+        <div className="w768">
           <Helmet title={config.siteTitle} />
           <SEO />
           <PostListing postEdges={postEdges} />

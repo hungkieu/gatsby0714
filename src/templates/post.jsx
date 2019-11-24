@@ -23,8 +23,8 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout>
-        <div class="Container">
-          <div class="w768">
+        <div className="Container">
+          <div className="w768">
             <Helmet>
               <title>{`${post.title} | ${config.siteTitle}`}</title>
             </Helmet>

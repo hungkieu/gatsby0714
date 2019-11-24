@@ -17,24 +17,17 @@ const style = {
 	}
 };
 
-// const activePostsLocation = () => {
-// 	if (!window.location) return false;
-// 	const { pathname } = window.location;
-// 	const regex = /\/([^applications\/]+)(.*)/;
-// 	return regex.test(pathname))
-// };
-
-const Header = ({ title }) => {
+const Header = () => {
 	return (
-		<header>
-			<div className="Container">
-				<div className="w960" style={style.header}>
-					<Link to="/" style={style.title}>
-						<h3>HungKieu</h3>
-					</Link>
-				</div>
-			</div>
-		</header>
+  <header>
+    <div className="Container">
+      <div className="w768" style={style.header}>
+        <Link to="/" style={style.title}>
+          <h3>HungKieu</h3>
+        </Link>
+      </div>
+    </div>
+  </header>
 	);
 };
 

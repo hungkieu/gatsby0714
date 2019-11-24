@@ -18,6 +18,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 a {
 	text-decoration: none;
 }
@@ -40,7 +46,7 @@ a {
 }
 
 .w768 {
-	padding: 0 24px;
+	padding: 0 1.5rem;
 	width: 100%;
 	max-width: 768px;
 }
@@ -89,4 +95,53 @@ a {
 	display: block;
 	text-align: center;
 	margin: 16px auto;
+	max-width: 100%;
+}
+
+.PostCard {
+	display: flex;
+	width: 100%;
+}
+
+.PostCard a {
+	display: grid;
+	grid-template-columns: 116px 1fr;
+	height: 100px;
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	margin-bottom: 0.5rem;
+}
+
+.PostCard a:hover {
+	background: #ededfd;
+}
+
+.PostCard img {
+	justify-self: center;
+	align-self: center;
+	width: 100px;
+	height: 75px;	
+}
+
+.PostCard a .content {
+	width: 100%;
+}
+
+.PostCard a .content .title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #333;
+}
+
+@media screen and (max-width: 768px) {
+	.PostCard a .content .title {
+		font-size: 1.2rem;
+	}
+}
+
+.PostCard a .content .date {
+	font-size: 0.8rem;
+	color: #aaa;
+	text-transform: capitalize;
 }
