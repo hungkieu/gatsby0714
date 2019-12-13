@@ -13,6 +13,7 @@ class PostTags extends Component {
               key={tag}
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
+              className="post-tag-link"
             >
               <button type="button">{tag}</button>
             </Link>
