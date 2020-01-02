@@ -5,7 +5,8 @@ cover: /assets/aarqeiys_400x400.jpg
 slug: ung-dung-todo-voi-reactjs-va-feathersjs
 category: ReactJS
 tags:
-  - ReactJS FeathersJS
+  - ReactJS
+  - FeathersJS
 ---
 Bài viết này chia sẻ cách mình tạo một ứng dụng ToDo đơn giản với FeathersJS ở phía server và ReactJs ở Client. Mình sẽ đi vào một số phần chính là cách cài đặt, và sử dụng FeathersJS client với ReactJS như thế nào mà thôi, nên bài viết sẽ bỏ qua khá nhiều phần như xác thực dữ liệu, hiệu ứng, ...
 
